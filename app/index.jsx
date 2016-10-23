@@ -1,12 +1,19 @@
 import {render} from 'react-dom'
 import React from 'react';
-import {Provider} from 'react-redux';
-import {AppBar, Checkbox, IconButton} from 'react-toolbox';
-import {Layout, NavDrawer, Panel, Sidebar, Dropdown} from 'react-toolbox';
-import 'react-toolbox/lib/commons.scss';
-import {Page} from './Page';
+import {ThemeProvider} from 'react-css-themr';
+import inlineCss from './page.scss';
+import {Item} from './components/Item';
 
+const contextTheme = {
+    Item: require('./theme/ItemVendor.scss'),
+};
 
 render((
-    <Page />
+    <div>
+        <Item />
+        <ThemeProvider theme={contextTheme}>
+            <Item />
+        </ThemeProvider>
+        <Item theme={inlineCss}/>
+    </div>
 ), document.getElementById('app'));
