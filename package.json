@@ -21,20 +21,27 @@
     "start-selenium": "java -jar ./../selenium-server-standalone-2.53.1.jar"
   },
   "dependencies": {
-    "autoprefixer": "^6.5.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "material-ui": "^0.16.0",
-    "path": "^0.12.7",
-    "redux": "^3.5.2",
     "@kadira/storybook": "^1.28.1",
+    "autoprefixer": "^6.5.0",
     "chai": "^3.5.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.15.0",
+    "material-ui": "^0.16.0",
     "mocha": "^2.4.5",
+    "node-sass": "^3.10.1",
+    "path": "^0.12.7",
+    "postcss-loader": "^1.0.0",
     "react": "^15.3.1",
+    "react-css-themr": "^1.4.1",
     "react-dom": "^15.3.1",
+    "redux": "^3.5.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
   },
   "devDependencies": {
+    "css-loader": "^0.25.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
     "webpack-dev-server": "^1.14.1"
   }
 }
